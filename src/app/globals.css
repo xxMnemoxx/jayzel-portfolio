@@ -1,26 +1,178 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d1220;
+  --background-soft: #141d2f;
+  --foreground: #f5f0d8;
+  --foreground-soft: #d9d2bb;
+  --panel: rgba(17, 24, 38, 0.8);
+  --panel-strong: rgba(9, 13, 22, 0.9);
+  --gold: #f6c76a;
+  --gold-deep: #d89d42;
+  --teal: #69d0d4;
+  --teal-deep: #2a8ca5;
+  --rose: #ef8a8a;
+  --shadow: rgba(0, 0, 0, 0.4);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair), ui-serif, Georgia;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1020 0%, #111b2a 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.game-shell {
+  position: relative;
+  background: transparent;
+}
+
+.pixel-font {
+  font-family: var(--font-pixel), "Courier New", monospace;
+  letter-spacing: 0.08em;
+}
+
+.game-panel,
+.game-panel-alt,
+.quest-panel,
+.party-card,
+.progress-box {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(246, 199, 106, 0.35);
+  box-shadow: 0 0 0 2px rgba(13, 18, 32, 0.9);
+}
+
+.game-panel {
+  background: rgba(15, 20, 31, 0.96);
+  border-color: rgba(246, 199, 106, 0.45);
+  box-shadow: 0 0 0 2px rgba(14, 17, 27, 1), 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.game-panel-alt {
+  background: rgba(18, 24, 36, 0.94);
+  border-color: rgba(154, 173, 193, 0.3);
+  box-shadow: 0 0 0 2px rgba(14, 17, 27, 1);
+}
+
+.quest-panel {
+  background: rgba(12, 17, 27, 0.96);
+  border-color: rgba(105, 208, 212, 0.4);
+}
+
+.party-card {
+  background: rgba(17, 24, 38, 0.8);
+  border-color: rgba(246, 199, 106, 0.28);
+}
+
+.progress-box {
+  background: rgba(9, 13, 22, 0.7);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.game-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid rgba(246, 199, 106, 0.4);
+  background: rgba(246, 199, 106, 0.06);
+  color: var(--gold);
+  border-radius: 0.2rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.game-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 2px solid rgba(105, 208, 212, 0.3);
+  background: rgba(15, 24, 36, 0.9);
+  color: var(--foreground-soft);
+  border-radius: 0.2rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.game-heading {
+  font-family: var(--font-playfair), Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.game-ornament {
+  display: block;
+  width: 3.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(246, 199, 106, 0), rgba(246, 199, 106, 0.9), rgba(246, 199, 106, 0));
+}
+
+.game-card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card-glow::before {
+  display: none;
+}
+
+.pixel-rule {
+  position: relative;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, rgba(246,199,106,0.9), transparent);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-teal {
+  color: var(--teal);
+}
+
+.bg-game-gold {
+  background: rgba(246, 199, 106, 0.08);
+}
+
+.bg-game-teal {
+  background: rgba(105, 208, 212, 0.08);
+}
+
+@media (max-width: 768px) {
+  .game-chip,
+  .game-badge {
+    letter-spacing: 0.16em;
+  }
+}
+
