@@ -21,14 +21,8 @@ export default function ScrollProgress() {
     return () => window.removeEventListener("scroll", updateProgress);
   }, []);
 
-  const isNearBottom = progress > 80;
-
   return (
-    <div
-      className={`pointer-events-none fixed right-3 top-1/2 z-[40] -translate-y-1/2 transition-all duration-300 sm:right-5 ${
-        isNearBottom ? "opacity-0 translate-x-2" : "opacity-100 translate-x-0"
-      }`}
-    >
+    <div className="pointer-events-none fixed right-3 top-1/2 z-[40] -translate-y-1/2 transition-all duration-300 sm:right-5">
       <div className="flex flex-col items-center gap-2">
         <span className="pixel-font text-[7px] uppercase tracking-[0.2em] text-cyan-200/90">
           {Math.round(progress)}%
