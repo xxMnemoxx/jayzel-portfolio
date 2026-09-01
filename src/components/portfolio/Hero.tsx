@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import { Terminal, Briefcase, Mail, Sparkles } from 'lucide-react';
 
@@ -10,7 +9,7 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="game-chip">
               <Sparkles size={10} className="text-gold" />
-              Available for new quests
+              Available for new projects
             </div>
 
             <div className="space-y-5">

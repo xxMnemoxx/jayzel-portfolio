@@ -1,4 +1,3 @@
-import React from 'react';
 import { Terminal, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -37,7 +36,7 @@ const Projects = () => {
             key={idx}
             className={`game-panel-alt grid gap-8 rounded-[0.4rem] p-5 md:p-8 ${idx % 2 === 0 ? 'md:grid-cols-[1.05fr_1fr]' : 'md:grid-cols-[1fr_1.05fr]'}`}
           >
-            <div className="game-card-glow flex min-h-[240px] items-center justify-center overflow-hidden rounded-[0.2rem] border border-white/10 bg-slate-950/80">
+            <div className="game-card-glow flex min-h-60 items-center justify-center overflow-hidden rounded-[0.2rem] border border-white/10 bg-slate-950/80">
               <Terminal size={52} className="text-stone-400" />
             </div>
 

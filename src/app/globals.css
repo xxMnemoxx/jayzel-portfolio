@@ -142,17 +142,6 @@ body::before {
   overflow: hidden;
 }
 
-.game-card-glow::before {
-  display: none;
-}
-
-.pixel-rule {
-  position: relative;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, rgba(246,199,106,0.9), transparent);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
-}
-
 .text-gold {
   color: var(--gold);
 }

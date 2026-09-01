@@ -1,4 +1,3 @@
-import React from 'react';
 import { Terminal, Briefcase, Mail } from 'lucide-react';
 
 const Footer = () => {

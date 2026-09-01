@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ContactForm = () => {
   return (
     <section id="contact" className="py-20 md:py-24">

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2, Server, Database } from 'lucide-react';
 
 const TechStack = () => {
