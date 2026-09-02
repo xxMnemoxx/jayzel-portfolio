@@ -17,9 +17,9 @@ const ContactForm = () => {
   const sendMessage = async () => {
     if (!formRef.current) return;
 
-    if (EMAILJS_PUBLIC_KEY === "MMV8YnCrM31bg7sHX") {
+    if (!EMAILJS_PUBLIC_KEY || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID) {
       setStatus("error");
-      setErrorMsg("Form isn't connected yet — add your EmailJS keys.");
+      setErrorMsg("Form isn't connected yet — add your EmailJS env vars.");
       return;
     }
 
