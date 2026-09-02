@@ -12,13 +12,13 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-8">
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="text-stone-400 transition-colors hover:text-cyan-200">
+          <a href="https://github.com/xxMnemoxx" target="_blank" rel="noreferrer" className="text-stone-400 transition-colors hover:text-cyan-200">
             <Terminal size={18} />
           </a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-stone-400 transition-colors hover:text-amber-200">
             <Briefcase size={18} />
           </a>
-          <a href="mailto:hello@example.com" className="text-stone-400 transition-colors hover:text-amber-200">
+          <a href="mailto:jayzelmaellanasas@gmail.com" className="text-stone-400 transition-colors hover:text-amber-200">
             <Mail size={18} />
           </a>
         </div>
