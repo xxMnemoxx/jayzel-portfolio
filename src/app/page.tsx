@@ -7,7 +7,7 @@ import Projects from "@/components/portfolio/Projects";
 import ContactForm from "@/components/portfolio/ContactForm";
 import Footer from "@/components/portfolio/Footer";
 
-export default function Home() {
+export default function Home() { 
   return (
     <div className="game-shell min-h-screen selection:bg-amber-300/40 selection:text-stone-950">
       <Navbar />
