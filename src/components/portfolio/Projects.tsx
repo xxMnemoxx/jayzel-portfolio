@@ -7,7 +7,7 @@ const Projects = () => {
       description: 'A collaborative workspace tool featuring full CRUD flows, real-time board updates, and secure user sessions for team-based workflows.',
       tags: ['Vite', 'JavaScript', 'Tailwind CSS', 'Supabase'],
       github: 'https://github.com/xxMnemoxx/TaskSync.git',
-      live: '#',
+      live: 'https://task-sync-smoky.vercel.app/',
     },
     {
       title: 'Project Beta: SUBLI',
