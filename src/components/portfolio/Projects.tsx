@@ -3,19 +3,18 @@ import { Terminal, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Project Alpha: Task Manager',
+      title: 'Project Alpha: TaskSync',
       description: 'A collaborative workspace tool featuring full CRUD flows, real-time board updates, and secure user sessions for team-based workflows.',
-      tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
-      reward: 'Gold + 120 XP',
+      tags: ['Vite', 'JavaScript', 'Tailwind CSS', 'Supabase'],
       github: 'https://github.com',
       live: 'https://vercel.com',
     },
     {
-      title: 'Project Beta: E-Commerce Engine',
-      description: 'A high-performance storefront with secure payment sandboxes, automated webhooks, and conversion-focused product experiences.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe API'],
+      title: 'Project Beta: SUBLI',
+      description: 'A web-based platform that connects renters with local rental shops, making it easier to search, reserve, and manage rental products online. It also helps shop owners manage their products, orders, and transactions efficiently.',
+      tags: ['React', 'Node.js', 'TypeScript', 'PostgreSQL'],
       reward: 'Weapon upgrade',
-      github: 'https://github.com',
+      github: 'https://github.com/Amaro018/react-subli.git',
       live: 'https://vercel.com',
     },
   ];
