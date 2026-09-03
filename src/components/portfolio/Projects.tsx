@@ -6,7 +6,7 @@ const Projects = () => {
       title: 'Project Alpha: TaskSync',
       description: 'A collaborative workspace tool featuring full CRUD flows, real-time board updates, and secure user sessions for team-based workflows.',
       tags: ['Vite', 'JavaScript', 'Tailwind CSS', 'Supabase'],
-      github: 'https://github.com',
+      github: 'https://github.com/xxMnemoxx/TaskSync.git',
       live: '#',
     },
     {
