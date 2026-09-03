@@ -7,7 +7,7 @@ const Projects = () => {
       description: 'A collaborative workspace tool featuring full CRUD flows, real-time board updates, and secure user sessions for team-based workflows.',
       tags: ['Vite', 'JavaScript', 'Tailwind CSS', 'Supabase'],
       github: 'https://github.com',
-      live: 'https://vercel.com',
+      live: '#',
     },
     {
       title: 'Project Beta: SUBLI',
@@ -15,14 +15,13 @@ const Projects = () => {
       tags: ['React', 'Node.js', 'TypeScript', 'PostgreSQL'],
       reward: 'Weapon upgrade',
       github: 'https://github.com/Amaro018/react-subli.git',
-      live: 'https://vercel.com',
+      live: '#',
     },
   ];
 
   return (
     <section id="projects" className="py-20 md:py-24">
       <div className="mb-10 space-y-4">
-        <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-amber-200/90">Quest archive</p>
         <div className="flex items-center gap-4">
           <h2 className="game-heading text-3xl text-amber-50 md:text-4xl">Selected <span className="text-gold italic">Works</span></h2>
           <span className="game-ornament" />

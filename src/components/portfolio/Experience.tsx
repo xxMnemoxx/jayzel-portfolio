@@ -23,7 +23,6 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 md:py-24">
       <div className="mb-10 space-y-4">
-        <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-amber-200/90">Adventurer log</p>
         <div className="flex items-center gap-4">
           <h2 className="game-heading text-3xl text-amber-50 md:text-4xl">Technical <span className="text-gold italic">Journey</span></h2>
           <span className="game-ornament" />
