@@ -1,5 +1,3 @@
-# Jayzel Llanasas Portfolio
-
 A modern portfolio website for Jayzel Llanasas, built with Next.js, React, TypeScript, and Tailwind CSS. The site showcases professional experience, technical capabilities, projects, and contact details in a polished, game-inspired visual style.
 
 ## Overview
